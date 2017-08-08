@@ -1,0 +1,311 @@
+@import "_fonts";
+
+body{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow-x:hidden;
+
+}
+html {
+  overflow-y: scroll;
+}
+
+.logo{
+	margin-top: 20px;
+}
+
+header{
+   padding: 20px 0;
+   position: absolute;
+   top: 30px;
+   width: 100%;
+}
+
+header img{
+  margin-left: 40px;
+}
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    margin-right: 30px;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+}
+
+/* Float the list items side by side */
+ul.topnav li {float: left;}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #fff;
+    font-family: $light;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+ul.topnav li:not(:last-child) a{
+	padding: 20px 16px;	
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #555; color: #fff;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+#first-section{
+	background: linear-gradient(to top, black 0%, transparent 100%), url("../img/first-section-image.png") no-repeat; 
+	background-size: cover;
+	padding: 200px 0px;
+	text-align: center;
+}
+
+#first-section h1:nth-child(1){
+	font-family: $medium;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 40px;
+}
+
+#first-section h1:nth-child(2){
+	font-family: $bold;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 40px;
+}
+
+#first-section h2{
+	font-family: $light;
+	color: #fff;
+	font-size: 30px;
+}
+
+#first-section input[type="text"]{
+	margin-bottom: 20px;
+}
+
+.form-content{
+	background-color: rgba(255, 255, 255, 0.5);
+	padding-top: 10px;
+	padding-bottom: 30px;
+	margin: 0px 30px;
+}
+
+.form-content p{
+	color: #fff;
+	font-family: $light;
+	font-size: 25px;
+}
+
+input[type="text"]{
+	padding: 10px 160px 10px 10px;
+	border-radius: 10px;
+	margin-right: 20px;
+	font-size: 25px;
+}
+
+
+input[type="submit"]{
+	background-color: red;
+	color: #fff;
+	padding: 15px 35px;
+	font-size: 20px;
+	text-transform: uppercase;
+	border-radius: 30px;
+	border: 3px solid #fff;
+}
+
+input[type="submit"]:hover{
+	background-color: #fff;
+	color: red;
+	cursor: pointer;
+}
+
+#second-section{
+	padding: 50px 0px;
+}
+
+#second-section .description{
+	margin-right: 40px;
+}
+
+.title{
+	color: #000;
+	font-family: $medium;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 35px;
+}
+
+.col-md-6{
+	display: flex;
+	justify-content: center;
+	padding: 20px 0px;
+}
+
+.description{
+	width: 500px;
+	font-family: $light;
+	font-size: 22px;
+}
+
+#third-section{
+	padding: 50px 0px;
+	background-color: #ffb700;
+}
+
+.icon-section{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: flex-end;
+}
+
+.icon{
+	margin: 30px;
+	font-family: $regular;
+	font-size: 20px;
+}
+
+.icon h5{
+	width: 250px;
+}
+
+.button-section{
+	justify-content: center;
+	display: flex;
+}
+
+button{
+	@extend input[type="submit"];
+}
+
+#fourth-section{
+	padding: 50px 0px;
+}
+
+.sub-description{
+	text-align: center;
+	font-family: $light;
+	font-size: 29px;
+	padding: 0 200px;
+}
+
+.text{
+	font-family: $light;
+	font-size: 24px;
+	margin-right: 30px;
+}
+
+
+
+#fifth-section{
+	padding: 50px 0px;
+	background-color: #ffb700;
+	text-align: center;
+}
+
+#fifth-section h2, #tenth-section h2 {
+	font-family: $light;
+	text-align: center;
+	font-size: 30px;
+}
+
+#fifth-section span, #tenth-section span, #fourth-section span{
+	font-family: $medium;
+}
+
+.old-curr{
+	text-decoration: line-through;
+}
+
+
+
+#fifth-section p, #tenth-section p{
+	font-family: $light;
+	font-size: 20px;
+	padding-top: 10px;
+}
+
+#sixth-section{
+	padding: 50px 0px;
+	text-align: center;
+}
+
+#seventh-section{
+	padding: 50px 0px;
+	text-align: center;
+	background-color: #ffb700;
+}
+
+#eighth-section{
+	padding: 50px 0px;
+}
+
+#eighth-section .img-rounded{
+	margin-right: 40px;
+}
+
+#nineth-section{
+	padding: 50px 0px;
+	background-color: #ececec;
+}
+
+
+#nineth-section .col-md-6{
+	display: flex;
+	
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+
+.col-md-6-content{
+	display: flex;
+	margin: 30px 200px;
+	justify-content: center;
+}
+
+.col-md-6-content .info{
+	margin-left: 50px;
+}
+
+.info{
+	h1{
+		font-family: $medium;
+	}
+
+	h3{
+		font-family: $light;
+	}
+
+	p{
+		font-family: $light;
+	}
+}
+
+#tenth-section{
+	padding: 50px 0px;
+	text-align: center;
+	background-color: #ffb700;	
+}
+
+footer{
+	background-color: #000;
+	text-align: center;
+	padding: 25px 0;
+}
+
+footer a{
+	color: #fff;
+	font-family: $light;
+	font-size: 20px;
+}
+
+
+
